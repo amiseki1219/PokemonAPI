@@ -11,6 +11,11 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene("Main");
     }
+    public void SceneChangeDetail()
+    {
+        SceneManager.LoadScene("Detail");
+    }
+
 
 
 
