@@ -18,13 +18,15 @@ public class Pikachu : MonoBehaviour
 
     void Start()
     {
+        //コルーチンとは、実行を停止して Unity へ制御を戻し、その次のフレームで停止したところから続行することができる関数
         StartCoroutine(LoadPikahchu());
     }
 
 
 
-
-
+    //コルーチンを作る場合は、IEnumerator型というメソッドを作成
+    //メソッド自体がコルーチンとなり、呼び出して使うことで中に書いた処理が実行されるようになる
+    //これを使う場合はusing System.Collections;をかく
     IEnumerator LoadPikahchu()
     {
 
